@@ -1,0 +1,54 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:fee-inquiry-request xmlns:ns2="http://www.westernunion.com/schema/xrsi">
+			<channel>
+				<type>H2H</type>
+				<name>WUPREPAID</name>
+				<version>9500</version>
+			</channel>
+			<financials>
+				<destination_principal_amount>12300</destination_principal_amount>
+			</financials>
+			<payment_details>
+				<expected_payout_location>
+					<state_code>MT</state_code>
+					<city>belton</city>
+				</expected_payout_location>
+				<recording_country_currency>
+					<iso_code>
+						<country_code>US</country_code>
+						<currency_code>USD</currency_code>
+					</iso_code>
+				</recording_country_currency>
+				<destination_country_currency>
+					<iso_code>
+						<country_code>US</country_code>
+						<currency_code>USD</currency_code>
+					</iso_code>
+				</destination_country_currency>
+				<originating_country_currency>
+					<iso_code>
+						<country_code>US</country_code>
+						<currency_code>USD</currency_code>
+					</iso_code>
+				</originating_country_currency>
+				<transaction_type>WMF</transaction_type>
+				<payment_type>Cash</payment_type>
+				<exchange_rate>1.0</exchange_rate>
+				<auth_status>VLD</auth_status>
+			</payment_details>
+			<promotions>
+				<sender_promo_code />
+			</promotions>
+			<delivery_services>
+				<code>000</code>
+			</delivery_services>
+			<foreign_remote_system>
+				<identifier>WGWBUSPPD0P</identifier>
+				<reference_no>1399469240822</reference_no>
+				<counter_id>USPPDWBP01A</counter_id>
+				<operator_id />
+			</foreign_remote_system>
+		</ns2:fee-inquiry-request>
+	</soapenv:Body>
+</soapenv:Envelope>
